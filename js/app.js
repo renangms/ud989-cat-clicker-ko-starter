@@ -13,6 +13,9 @@ var ViewModel = function() {
 
     }, this);
 
+    // this.nicknames = ko.observableArray(['Tabtab', 'Mr. T', 'T-Bone']);
+    this.nicknames = ['Tabtab', 'Mr. T', 'T-Bone'];
+
     this.incrementCounter = function() {
         this.clickCount(this.clickCount() + 1);
     };
