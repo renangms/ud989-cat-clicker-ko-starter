@@ -18,10 +18,12 @@ var Cat = function() {
 }
 
 var ViewModel = function() {
+    var self = this;
+
     this.cat = ko.observable(new Cat());
 
     this.incrementCounter = function() {
-        this.cat().clickCount(this.cat().clickCount() + 1);
+        self.cat().clickCount(self.cat().clickCount() + 1);
     };
 }
 
